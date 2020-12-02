@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp">
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="#FF7F50"
+            android:text="This is an orange text view"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="134dp"
+            android:layout_height="match_parent"
+            android:background="#98FB98"
+            android:text="This is a green text view"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:background="#B0E0E6"
+            android:text="This is a blue text view"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:weightSum="5"
+
+        android:padding="10dp"
+        >
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:text="THIS IS A BUTTON"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:backgroundTint="#8FBC8F"
+            android:text="THIS IS A GREEN BUTTON" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:weightSum="2"
+        android:background="#FFA500"
+        >
+
+        <EditText
+            android:id="@+id/editext_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is an edit text"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/editext_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is a new edit text"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#87CEFA"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/checkbox_notifyme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notify me:)"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Switch
+            android:id="@+id/switch_backup_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Auto Backup"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#87CEFA"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radiobutton_yes"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="YES" />
+            <RadioButton
+                android:id="@+id/radiobutton_no"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+        </RadioGroup>
+
+    </LinearLayout>
+    </LinearLayout>
